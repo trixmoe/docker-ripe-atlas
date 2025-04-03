@@ -21,6 +21,8 @@ RUN apt-get update -y \
 	&& apt-get install -y libcap2-bin iproute2 openssh-client procps net-tools tini \
 	&& rm -rf /var/lib/apt/lists/*
 
+RUN printf "ID=jamesits\n" >> /etc/os-release
+
 ######## builder ########
 FROM base AS builder
 
