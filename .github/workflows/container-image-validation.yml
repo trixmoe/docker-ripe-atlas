@@ -1,6 +1,7 @@
 name: "Container Image Validation"
 
 on:
+  push:
   pull_request:
     branches:
       - master
